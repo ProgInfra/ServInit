@@ -1,4 +1,5 @@
 * [ServInit](/)
+* [Softwares](/docs/softwares.md)
 * [Ideas](/docs/ideas.md)
 * [Contributing](/CONTRIBUTING.md)
 * [Licence](/LICENCE.md)

@@ -10,4 +10,4 @@
 
 ## Ideas
 
-- TODO
+- Automatic Debian ISO Deployment
