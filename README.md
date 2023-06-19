@@ -44,6 +44,7 @@ We will use Debian as operating system to setup our basic server.
 4) Next you need to secure your SSH server with this documentation.
 5) If you want, you can install some basics [softwares](./docs/softwares.md).
 6) If you want, you can install Docker with this [documentation](https://progdevlab.gitlab.io/dyntools/#/docs/docker/install).
+7) If you want, you can install Vagrant with this [documentation](https://progdevlab.gitlab.io/dyntools/#/docs/vagrant/install).
 
 ### Server Access
 
