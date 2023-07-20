@@ -22,10 +22,16 @@ apt-get install -y \
     git \
     vim \
     nano \
-    screen \
-    cockpit
+    screen
 
 # Glances
 curl -L https://bit.ly/glances | /bin/bash
+
+# Cockpit
+. /etc/os-release
+echo "deb http://deb.debian.org/debian ${VERSION_CODENAME}-backports main" > \
+    /etc/apt/sources.list.d/backports.list
+apt update
+apt install -t ${VERSION_CODENAME}-backports cockpit
 
 exit 0

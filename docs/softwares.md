@@ -24,7 +24,7 @@ This is a list of basics softwares to install on your server.
 - **Nano** : Simple Terminal Text Editor
 - **VIM** : Advanced Terminal Text Editor
 - **Screen** : Multiple Parallel Terminal management
-- **Cockpit** : Web Server Management interface
+- **Cockpit** : Web Server Management interface (see [this](https://proginfra.gitlab.io/infra_services/#/docs/cockpit) for documentation)
 
 ## Install Script
 
@@ -39,11 +39,17 @@ apt-get install -y \
     git \
     vim \
     nano \
-    screen \
-    cockpit
+    screen
 
 # Glances
 curl -L https://bit.ly/glances | /bin/bash
+
+# Cockpit
+. /etc/os-release
+echo "deb http://deb.debian.org/debian ${VERSION_CODENAME}-backports main" > \
+    /etc/apt/sources.list.d/backports.list
+apt update
+apt install -t ${VERSION_CODENAME}-backports cockpit
 ```
 
 You can also use the script : **[/docs/src/install.sh](./src/install.sh)**
